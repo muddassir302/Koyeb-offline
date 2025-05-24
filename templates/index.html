@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIHAL HACKER XD</title>
+    <style>
+        body {
+            background: url('https://i.ibb.co/DQW5hjL/anime-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+            border-radius: 15px;
+        }
+        input, select, button {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .run-btn {
+            background: #2196F3;
+            color: white;
+        }
+        .stop-btn {
+            background: #f44336;
+            color: white;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+        a {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>NIHAL HACKER XD</h2>
+        <form action="/run" method="POST" enctype="multipart/form-data">
+            <label>Select Token Option</label>
+            <select name="token_option">
+                <option value="single">Single Token</option>
+                <option value="multi">Multi Token</option>
+            </select>
+            <input type="text" name="token" placeholder="Enter Single Token">
+            <input type="text" name="inbox" placeholder="Enter Inbox/convo UID">
+            <input type="text" name="hater" placeholder="Enter Your Hater Name">
+            <input type="number" name="time" placeholder="Enter Time (seconds)">
+            <label>Choose Your Np File</label>
+            <input type="file" name="file">
+            <button type="submit" class="run-btn">Run</button>
+        </form>
+        <form action="/stop" method="POST">
+            <input type="text" name="task_id" placeholder="Enter Task ID to Stop">
+            <button type="submit" class="stop-btn">Stop</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 MaDe By ✘NĪHĀL✘HeRe✌️<br>
+        <a href="https://facebook.com" target="_blank">CLICK HERE FOR FACEBOOK</a><br>
+        <a href="https://wa.me/your-number" target="_blank">Chat on WhatsApp</a>
+    </footer>
+</body>
+</html>
